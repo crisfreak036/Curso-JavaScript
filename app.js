@@ -1,17 +1,13 @@
 // var let const 
 
-var nombre = 'Juan'; //Definición de una variable nombre de tipo VAR.
+let variable1 = 'Libro'; //Se crea la variable1 de tipo let que contiene a Libro
 
-nombre = 'John'; //Sin necesidad de anteponer VAR (sin volverla a declarar) se puede cambiar el contenido de la variable de tipo VAR
+console.log(variable1); //Se muestra por la consola del navegador la variable1
 
-console.log(nombre); //Muestra la variable nombre por la consola del navegador
+variable1 = 'Libro 1'; //Se cambia el valor de la variable1 a Libro 1
 
-var nombre2; //nombre2 de tipo VAR no se encuentra definida.
+console.log(variable1); //Se muestra por la consola del navegador la variable1
 
-console.log(nombre2); //En la consola del navegador saldrá como undefined
+let variable1 = 'Libro 2' //Tira error debido a que al ser de tipo let no se puede volver a declarar
 
-var v1 = 0, v2 = 1, v3 = 2; // Se definen 3 variables de tipo VAR en una misma línea.
-
-console.log(v1); //Muestra v1
-console.log(v2); //Muestra v2
-console.log(v3); //Muestra v3
+console.log(variable1); //Al intentar mostrar la variable1 sale un error en la consola del navegador. Cabe mencionar que debido al error que causa la redefinición de la variable1, la consola no muestra nada. 
